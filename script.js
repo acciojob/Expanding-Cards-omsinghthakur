@@ -1,15 +1,15 @@
-//your JS code here. If required.
-const panels = document.querySelectorAll('.panel');
-
-function toggleOpen() {
-  this.classList.toggle('active');
+onst panels = document.querySelectorAll('.panel')
+ 
+ 
+panels.forEach(panel=>{
+    panel.addEventListener("click",function(){
+        removeActiveClasses()
+        panel.classList.add("active")
+    })
+})
+ 
+function removeActiveClasses(){
+    panels.forEach(panel=>{
+        panel.classList.remove("active")
+    })
 }
-
-function toggleActive(e) {
-  if (e.propertyName.includes('flex')) {
-    this.classList.toggle('expanding');
-  }
-}
-
-panels.forEach(panel => panel.addEventListener('click', toggleOpen));
-panels.forEach(panel => panel.addEventListener('shrinked', toggleActive));
