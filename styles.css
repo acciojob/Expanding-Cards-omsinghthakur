@@ -1,1 +1,14 @@
 /*  your css code here. If applicable */
+.container{
+	display:flex; 
+}
+.container img{
+	width:400px;
+	border-radius:10%; 
+	padding:5px;
+}
+.img-text{
+	margin-top:-30px;
+	margin-left:20px;
+	color:white; 
+} 
